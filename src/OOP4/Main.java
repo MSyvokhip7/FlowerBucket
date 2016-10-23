@@ -12,6 +12,16 @@ public class Main {
         mak.setLength(80);
         bucket.addFlower(mak);
 
+        FlowerSpec tul = new FlowerSpec();
+        tul.setFresh(false);
+        tul.setPrice(280000);
+        tul.setType(FlowerType.TULPAN);
+        tul.setColor(FlowerColor.GREEN);
+        tul.setLength(380);
+        bucket.addFlower(tul);
+
         System.out.println(bucket);
+
+        System.out.println(bucket.searchFlower(tul));
     }
 }
